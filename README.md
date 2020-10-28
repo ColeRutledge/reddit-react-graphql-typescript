@@ -1,2 +1,2 @@
 # reddit-react-graphql-typescript
-following ben awad's fullstack react tutorial
+following ben awad's fullstack typescript tutorial
