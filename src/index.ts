@@ -32,7 +32,7 @@ const main = async () => {
             maxAge: 1000 * 60 * 60 * 24 * 3,    // 3 days
             httpOnly: true,
             sameSite: 'lax',                    // csrf
-            secure: __prod__                    // cookie only works in https
+            secure: __prod__,                   // cookie only works in https
         },
         secret: '39wn823kj486356kle237j9895fe',
         resave: false,
@@ -47,8 +47,6 @@ const main = async () => {
         }),
         context: ({ req, res }): MyContext => ({ em: orm.em, req, res })
     })
-
-
 
     apolloServer.applyMiddleware({ app })
 
